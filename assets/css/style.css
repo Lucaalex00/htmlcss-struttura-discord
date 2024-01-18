@@ -1,7 +1,7 @@
 :root {
     /*COLORS*/
-    --primary-color-header: rgba(173, 216, 230, 1);
-    --second-color-header: rgba(218, 165, 32, 1);
+    --background-color-header: rgba(173, 216, 230, 1);
+    --background-color-sub-container-header: rgba(218, 165, 32, 1);
     --background-first-section: rgba(0, 0, 139, 1);
     --square-color-first-section: rgba(238, 130, 238, 1);
     --square-left-main-section: rgba(30, 144, 255, 1);
@@ -13,5 +13,67 @@
     --right-column-footer: rgba(32, 178, 170, 1);
     --background-color-container-footer: rgba(127, 255, 212, 1);
     --logo-button-color-footer: rgba(250, 178, 189, 1);
+
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.debug header {
+    background-color: var(--background-color-header);
+
+}
+
+.header-container {
+    padding: 10px;
+}
+
+.debug .header-sub-container {
+    background-color: var(--background-color-sub-container-header);
+
+}
+
+.header-sub-container {
+    border: 1px dashed black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.links-container {
+    justify-content: space-around;
+    flex-grow: 3;
+    border-right: 2px dashed black;
+    border-left: 2px dashed black;
+    text-align: center;
+}
+
+.login {
+    flex-grow: 1;
+}
+
+.login {
+    text-align: right;
+}
+
+.logo,
+.links,
+.login {
+    padding: 5px;
 
 }
