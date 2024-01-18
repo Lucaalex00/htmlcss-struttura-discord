@@ -2,12 +2,16 @@
     /*COLORS*/
     --background-color-header: rgba(173, 216, 230, 1);
     --background-color-sub-container-header: rgba(218, 165, 32, 1);
+
     --background-first-section: rgba(0, 0, 139, 1);
     --square-color-first-section: rgba(238, 130, 238, 1);
+
     --square-left-main-section: rgba(30, 144, 255, 1);
     --square-right-main-section: rgba(255, 192, 203, 1);
     --background-main-even-section: rgba(211, 211, 211, 1);
+
     --square-color-final-section: rgba(34, 139, 34, 1);
+
     --background-color-footer: rgba(35, 39, 42, 1);
     --left-column-footer: rgba(240, 128, 128, 1);
     --right-column-footer: rgba(32, 178, 170, 1);
@@ -17,9 +21,10 @@
 }
 
 .container {
+    /*UNIVERSAL RULE*/
     max-width: 1000px;
     margin: auto;
-
+    padding: 10px
 }
 
 body {
@@ -28,15 +33,15 @@ body {
     box-sizing: border-box;
 }
 
+/*#region header*/
+
+
 
 .debug header {
     background-color: var(--background-color-header);
 
 }
 
-.header-container {
-    padding: 10px;
-}
 
 .debug .header-sub-container {
     background-color: var(--background-color-sub-container-header);
@@ -76,4 +81,124 @@ body {
 .login {
     padding: 5px;
 
+}
+
+/*#endregion header*/
+
+/*#region first-section*/
+.site-section-blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.debug .site-section-blue {
+    background-color: var(--background-first-section);
+    height: 300px;
+}
+
+.debug .site-section-blue .blue-section-container {
+    width: 700px;
+    height: 250px;
+    border: 1px dashed black;
+    background-color: var(--square-color-first-section);
+}
+
+/*#endregion first-section*/
+
+/*#region light-section*/
+.site-section-light {
+    display: flex;
+    justify-content: center;
+}
+
+.debug .light-section-container-left {
+    background-color: var(--square-left-main-section);
+
+}
+
+.light-section-container-left {
+    width: 60%;
+    border: 1px solid black;
+}
+
+.debug .light-section-container-right {
+    background-color: var(--square-right-main-section);
+    border: 1px solid black;
+
+}
+
+.light-section-container-right {
+    width: 40%;
+    border: 1px solid black;
+
+}
+
+.light-section-container-left,
+.light-section-container-right {
+    height: 300px;
+    margin: 1rem 0;
+}
+
+/*#endregion light-section*/
+
+/*#region dark-section*/
+
+/*Ho preferito ripetere le regole per una comprensione 
+del codice più pulita*/
+
+.site-section-dark {
+    background-color: var(--background-main-even-section);
+}
+
+.background-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.debug .dark-section-container-left {
+    background-color: var(--square-left-main-section);
+
+}
+
+.dark-section-container-left {
+    width: 60%;
+    border: 1px solid black;
+}
+
+.debug .dark-section-container-right {
+    background-color: var(--square-right-main-section);
+    border: 1px solid black;
+
+}
+
+.dark-section-container-right {
+    width: 40%;
+    border: 1px solid black;
+
+}
+
+.dark-section-container-left,
+.dark-section-container-right {
+    height: 300px;
+    margin: 1rem 0;
+}
+
+/*#endregion dark-section*/
+
+
+.green-square-dark-section-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin: 1rem 0;
+    border: 1px solid black;
+}
+
+.debug .green-square-dark-section-container {
+    background-color: var(--square-color-final-section);
 }
