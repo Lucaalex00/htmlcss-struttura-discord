@@ -1,0 +1,17 @@
+:root {
+    /*COLORS*/
+    --primary-color-header: rgba(173, 216, 230, 1);
+    --second-color-header: rgba(218, 165, 32, 1);
+    --background-first-section: rgba(0, 0, 139, 1);
+    --square-color-first-section: rgba(238, 130, 238, 1);
+    --square-left-main-section: rgba(30, 144, 255, 1);
+    --square-right-main-section: rgba(255, 192, 203, 1);
+    --background-main-even-section: rgba(211, 211, 211, 1);
+    --square-color-final-section: rgba(34, 139, 34, 1);
+    --background-color-footer: rgba(35, 39, 42, 1);
+    --left-column-footer: rgba(240, 128, 128, 1);
+    --right-column-footer: rgba(32, 178, 170, 1);
+    --background-color-container-footer: rgba(127, 255, 212, 1);
+    --logo-button-color-footer: rgba(250, 178, 189, 1);
+
+}
